@@ -1,5 +1,5 @@
 import supertest from "supertest";
-// const app = () => ({status: 200, body: null});
+const app = () => ({status: 200, body: null});
 describe('Beach forecast functional tests', () => {
     it('Should return a forecast with just a few times', async() => {
         const { body, status } = await supertest(app).get('/forecast');
